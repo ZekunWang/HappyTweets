@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_search.xml",
+        "source": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\menu\\menu_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_timeline.xml",
+        "source": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\menu\\menu_timeline.xml"
+    },
+    {
+        "merged": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\build\\intermediates\\res\\merged\\debug\\menu\\login.xml",
+        "source": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\menu\\login.xml"
+    }
+]

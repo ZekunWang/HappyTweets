@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+        
+
+    
+                                                                                
+           
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rlItemMedia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/item_view_padding"
+        android:background="@drawable/rv_item_background" android:tag="layout/item_medium_0">
+
+        <ImageView
+            android:layout_width="@dimen/item_media_width"
+            android:layout_height="@dimen/item_media_height"
+            android:scaleType="centerCrop"
+            android:textColor="@color/primary"
+            tools:background="@color/primary"
+            android:id="@+id/ivMedia"/>
+        <com.yqritc.scalablevideoview.ScalableVideoView
+            android:layout_width="@dimen/item_media_width"
+            android:layout_height="@dimen/item_media_height"
+            android:layout_alignLeft="@+id/ivMedia"
+            android:layout_alignTop="@+id/ivMedia"
+            android:id="@+id/vvMedia"
+            app:scalableType="centerCrop"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/ivExpand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chevron_right"
+            android:layout_toRightOf="@+id/ivMedia"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+         

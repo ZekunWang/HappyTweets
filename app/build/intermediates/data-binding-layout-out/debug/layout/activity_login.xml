@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context="com.zekunwang.happytweets.activities.LoginActivity"
+                android:background="@color/ic_launcher_color">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="loginToRest"
+        android:text="@string/login_label"
+        android:background="@drawable/button_login_background"
+        android:textColor="@color/ic_launcher_color"
+        android:textSize="@dimen/bootton_login_size"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textAllCaps="false"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button"/>
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/ic_launcher_large"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/button"/>
+
+</RelativeLayout>

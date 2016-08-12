@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#03A9F4</color>
+    <color name="primary_dark">#0288D1</color>
+    <color name="primary_light">#B3E5FC</color>
+    <color name="accent">#00BCD4</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+
+    <color name="item_text_username">#212121</color>
+    <color name="item_text_content">#9E9E9E</color>
+    <color name="item_text_relative_time">#BDBDBD</color>
+
+    <color name="rv_divider">#E0E0E0</color>
+    <color name="item_background">#FFFFFF</color>
+
+    <color name="ic_launcher_color">#1C9FF1</color>
+</resources>
