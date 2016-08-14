@@ -13,34 +13,24 @@ import java.lang.Override;
 public class ProfileActivity_ViewBinding<T extends ProfileActivity> implements Unbinder {
   protected T target;
 
-  private View view2131427465;
+  private View view2131361931;
 
-  private View view2131427467;
+  private View view2131361937;
 
-  private View view2131427497;
+  private View view2131361945;
 
-  private View view2131427502;
+  private View view2131361944;
 
-  private View view2131427501;
+  private View view2131361943;
 
-  private View view2131427500;
-
-  private View view2131427499;
+  private View view2131361942;
 
   public ProfileActivity_ViewBinding(final T target, Finder finder, Object source) {
     this.target = target;
 
     View view;
-    view = finder.findRequiredView(source, R.id.toolbar, "method 'onClick'");
-    view2131427465 = view;
-    view.setOnClickListener(new DebouncingOnClickListener() {
-      @Override
-      public void doClick(View p0) {
-        target.onClick(p0);
-      }
-    });
     view = finder.findRequiredView(source, R.id.fab, "method 'onClick'");
-    view2131427467 = view;
+    view2131361931 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -48,7 +38,7 @@ public class ProfileActivity_ViewBinding<T extends ProfileActivity> implements U
       }
     });
     view = finder.findRequiredView(source, R.id.ivFollow, "method 'onClick'");
-    view2131427497 = view;
+    view2131361937 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -56,7 +46,7 @@ public class ProfileActivity_ViewBinding<T extends ProfileActivity> implements U
       }
     });
     view = finder.findRequiredView(source, R.id.tvFollower, "method 'onClick'");
-    view2131427502 = view;
+    view2131361945 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -64,7 +54,7 @@ public class ProfileActivity_ViewBinding<T extends ProfileActivity> implements U
       }
     });
     view = finder.findRequiredView(source, R.id.tvFollowerCount, "method 'onClick'");
-    view2131427501 = view;
+    view2131361944 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -72,7 +62,7 @@ public class ProfileActivity_ViewBinding<T extends ProfileActivity> implements U
       }
     });
     view = finder.findRequiredView(source, R.id.tvFriend, "method 'onClick'");
-    view2131427500 = view;
+    view2131361943 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -80,7 +70,7 @@ public class ProfileActivity_ViewBinding<T extends ProfileActivity> implements U
       }
     });
     view = finder.findRequiredView(source, R.id.tvFriendCount, "method 'onClick'");
-    view2131427499 = view;
+    view2131361942 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -93,20 +83,18 @@ public class ProfileActivity_ViewBinding<T extends ProfileActivity> implements U
   public void unbind() {
     if (this.target == null) throw new IllegalStateException("Bindings already cleared.");
 
-    view2131427465.setOnClickListener(null);
-    view2131427465 = null;
-    view2131427467.setOnClickListener(null);
-    view2131427467 = null;
-    view2131427497.setOnClickListener(null);
-    view2131427497 = null;
-    view2131427502.setOnClickListener(null);
-    view2131427502 = null;
-    view2131427501.setOnClickListener(null);
-    view2131427501 = null;
-    view2131427500.setOnClickListener(null);
-    view2131427500 = null;
-    view2131427499.setOnClickListener(null);
-    view2131427499 = null;
+    view2131361931.setOnClickListener(null);
+    view2131361931 = null;
+    view2131361937.setOnClickListener(null);
+    view2131361937 = null;
+    view2131361945.setOnClickListener(null);
+    view2131361945 = null;
+    view2131361944.setOnClickListener(null);
+    view2131361944 = null;
+    view2131361943.setOnClickListener(null);
+    view2131361943 = null;
+    view2131361942.setOnClickListener(null);
+    view2131361942 = null;
 
     this.target = null;
   }

@@ -9,59 +9,22 @@ public class ContentProfileBinding extends android.databinding.ViewDataBinding  
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.rvFollow, 9);
-        sViewsWithIds.put(R.id.tvFriend, 10);
-        sViewsWithIds.put(R.id.tvFollower, 11);
-        sViewsWithIds.put(R.id.tabs, 12);
-        sViewsWithIds.put(R.id.viewpager, 13);
+        sViewsWithIds.put(R.id.viewpager, 1);
     }
     // views
-    public final android.widget.ImageView ivBackgroundImage;
-    public final android.widget.ImageView ivFollow;
-    public final android.widget.ImageView ivProfile;
     private final android.widget.RelativeLayout mboundView0;
-    public final android.widget.RelativeLayout rvFollow;
-    public final com.astuetz.PagerSlidingTabStrip tabs;
-    public final com.zekunwang.happytweets.others.LinkifiedTextView tvBody;
-    public final android.widget.TextView tvFollower;
-    public final android.widget.TextView tvFollowerCount;
-    public final android.widget.TextView tvFriend;
-    public final android.widget.TextView tvFriendCount;
-    public final android.widget.TextView tvScreenName;
-    public final android.widget.TextView tvUsername;
     public final android.support.v4.view.ViewPager viewpager;
     // variables
-    private com.zekunwang.happytweets.models.User mUser;
     // values
     // listeners
     // Inverse Binding Event Handlers
 
     public ContentProfileBinding(android.databinding.DataBindingComponent bindingComponent, View root) {
         super(bindingComponent, root, 0);
-        final Object[] bindings = mapBindings(bindingComponent, root, 14, sIncludes, sViewsWithIds);
-        this.ivBackgroundImage = (android.widget.ImageView) bindings[1];
-        this.ivBackgroundImage.setTag(null);
-        this.ivFollow = (android.widget.ImageView) bindings[2];
-        this.ivFollow.setTag(null);
-        this.ivProfile = (android.widget.ImageView) bindings[3];
-        this.ivProfile.setTag(null);
+        final Object[] bindings = mapBindings(bindingComponent, root, 2, sIncludes, sViewsWithIds);
         this.mboundView0 = (android.widget.RelativeLayout) bindings[0];
         this.mboundView0.setTag(null);
-        this.rvFollow = (android.widget.RelativeLayout) bindings[9];
-        this.tabs = (com.astuetz.PagerSlidingTabStrip) bindings[12];
-        this.tvBody = (com.zekunwang.happytweets.others.LinkifiedTextView) bindings[6];
-        this.tvBody.setTag(null);
-        this.tvFollower = (android.widget.TextView) bindings[11];
-        this.tvFollowerCount = (android.widget.TextView) bindings[8];
-        this.tvFollowerCount.setTag(null);
-        this.tvFriend = (android.widget.TextView) bindings[10];
-        this.tvFriendCount = (android.widget.TextView) bindings[7];
-        this.tvFriendCount.setTag(null);
-        this.tvScreenName = (android.widget.TextView) bindings[5];
-        this.tvScreenName.setTag(null);
-        this.tvUsername = (android.widget.TextView) bindings[4];
-        this.tvUsername.setTag(null);
-        this.viewpager = (android.support.v4.view.ViewPager) bindings[13];
+        this.viewpager = (android.support.v4.view.ViewPager) bindings[1];
         setRootTag(root);
         // listeners
         invalidateAll();
@@ -88,22 +51,16 @@ public class ContentProfileBinding extends android.databinding.ViewDataBinding  
     public boolean setVariable(int variableId, Object variable) {
         switch(variableId) {
             case BR.user :
-                setUser((com.zekunwang.happytweets.models.User) variable);
                 return true;
         }
         return false;
     }
 
     public void setUser(com.zekunwang.happytweets.models.User user) {
-        this.mUser = user;
-        synchronized(this) {
-            mDirtyFlags |= 0x1L;
-        }
-        notifyPropertyChanged(BR.user);
-        super.requestRebind();
+        // not used, ignore
     }
     public com.zekunwang.happytweets.models.User getUser() {
-        return mUser;
+        return null;
     }
 
     @Override
@@ -120,78 +77,7 @@ public class ContentProfileBinding extends android.databinding.ViewDataBinding  
             dirtyFlags = mDirtyFlags;
             mDirtyFlags = 0;
         }
-        android.graphics.drawable.Drawable userIsFollowingUserA = null;
-        java.lang.String userGetNameUser = null;
-        java.lang.String userGetProfileImageU = null;
-        android.graphics.drawable.Drawable UserIsFollowingUserA1 = null;
-        long userGetFollowersUser = 0L;
-        java.lang.String userGetScreenNameUse = null;
-        java.lang.String stringUserGetFollowe = null;
-        java.lang.String userGetProfileBanner = null;
-        java.lang.String stringUserGetFriends = null;
-        com.zekunwang.happytweets.models.User user = mUser;
-        long userGetFriendsUser = 0L;
-        boolean userIsFollowingUser = false;
-        java.lang.String stringUserGetScreenN = null;
-        java.lang.String userGetDescriptionUs = null;
-
-        if ((dirtyFlags & 0x3L) != 0) {
-
-
-
-                if (user != null) {
-                    // read user.getName()
-                    userGetNameUser = user.getName();
-                    // read user.getProfileImageUrl()
-                    userGetProfileImageU = user.getProfileImageUrl();
-                    // read user.getFollowers()
-                    userGetFollowersUser = user.getFollowers();
-                    // read user.getScreenName()
-                    userGetScreenNameUse = user.getScreenName();
-                    // read user.getProfileBannerUrl()
-                    userGetProfileBanner = user.getProfileBannerUrl();
-                    // read user.getFriends()
-                    userGetFriendsUser = user.getFriends();
-                    // read user.isFollowing()
-                    userIsFollowingUser = user.isFollowing();
-                    // read user.getDescription()
-                    userGetDescriptionUs = user.getDescription();
-                }
-                if((dirtyFlags & 0x3L) != 0) {
-                    if (userIsFollowingUser) {
-                        dirtyFlags |= 0x8L;
-                        dirtyFlags |= 0x20L;
-                    } else {
-                        dirtyFlags |= 0x4L;
-                        dirtyFlags |= 0x10L;
-                    }}
-
-
-                // read ("") + (user.getFollowers())
-                stringUserGetFollowe = ("") + (userGetFollowersUser);
-                // read ("@") + (user.getScreenName())
-                stringUserGetScreenN = ("@") + (userGetScreenNameUse);
-                // read ("") + (user.getFriends())
-                stringUserGetFriends = ("") + (userGetFriendsUser);
-                // read user.isFollowing() ? @android:drawable/ic_account_check : @android:drawable/ic_account_plus
-                userIsFollowingUserA = (userIsFollowingUser) ? (getDrawableFromResource(R.drawable.ic_account_check)) : (getDrawableFromResource(R.drawable.ic_account_plus));
-                // read user.isFollowing() ? @android:drawable/button_background : @android:drawable/button_background_disabled
-                UserIsFollowingUserA1 = (userIsFollowingUser) ? (getDrawableFromResource(R.drawable.button_background)) : (getDrawableFromResource(R.drawable.button_background_disabled));
-        }
         // batch finished
-        if ((dirtyFlags & 0x3L) != 0) {
-            // api target 1
-
-            com.zekunwang.happytweets.adapters.BindingAdapterUtils.loadBannerImage(this.ivBackgroundImage, userGetProfileBanner);
-            android.databinding.adapters.ImageViewBindingAdapter.setImageDrawable(this.ivFollow, userIsFollowingUserA);
-            android.databinding.adapters.ViewBindingAdapter.setBackground(this.ivFollow, UserIsFollowingUserA1);
-            com.zekunwang.happytweets.adapters.BindingAdapterUtils.loadImage(this.ivProfile, userGetProfileImageU);
-            com.zekunwang.happytweets.adapters.BindingAdapterUtils.formatLinkifiedText(this.tvBody, userGetDescriptionUs);
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.tvFollowerCount, stringUserGetFollowe);
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.tvFriendCount, stringUserGetFriends);
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.tvScreenName, stringUserGetScreenN);
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.tvUsername, userGetNameUser);
-        }
     }
     // Listener Stub Implementations
     // callback impls
@@ -222,10 +108,6 @@ public class ContentProfileBinding extends android.databinding.ViewDataBinding  
     /* flag mapping
         flag 0 (0x1L): user
         flag 1 (0x2L): null
-        flag 2 (0x3L): user.isFollowing() ? @android:drawable/ic_account_check : @android:drawable/ic_account_plus
-        flag 3 (0x4L): user.isFollowing() ? @android:drawable/ic_account_check : @android:drawable/ic_account_plus
-        flag 4 (0x5L): user.isFollowing() ? @android:drawable/button_background : @android:drawable/button_background_disabled
-        flag 5 (0x6L): user.isFollowing() ? @android:drawable/button_background : @android:drawable/button_background_disabled
     flag mapping end*/
     //end
 }

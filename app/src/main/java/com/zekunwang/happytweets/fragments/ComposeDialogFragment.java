@@ -4,15 +4,17 @@ package com.zekunwang.happytweets.fragments;
 import com.bumptech.glide.Glide;
 import com.zekunwang.happytweets.R;
 import com.zekunwang.happytweets.activities.TimelineActivity;
+import com.zekunwang.happytweets.models.Message;
 import com.zekunwang.happytweets.models.Tweet;
+import com.zekunwang.happytweets.models.User;
 import com.zekunwang.happytweets.others.HelperMethods;
 
 import org.parceler.Parcels;
 
 import android.app.Activity;
-import android.app.DialogFragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.DialogFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,24 +44,27 @@ public class ComposeDialogFragment extends DialogFragment {
     private Tweet tweet;
     private Tweet retweetedStatus;
     private Tweet targetTweet;
+    private User user;
     private int requestCode;
     Activity activity;
 
     // define listener to pass setting to activity
     public interface ComposeDialogListener {
-        void onFinishComposeDialog(int requestCode, Tweet tweet);
+        void onFinishComposeDialog(int requestCode, Tweet tweet, Message message);
     }
 
     public ComposeDialogFragment() {}
 
 
-    public static ComposeDialogFragment newInstance(int requestCode, Tweet tweet) {
+    public static ComposeDialogFragment newInstance(int requestCode, Tweet tweet, User user) {
         // pass setting to fragment
         ComposeDialogFragment composeDialogFragment = new ComposeDialogFragment();
         Bundle args = new Bundle();
         args.putInt("request_code", requestCode);
         if (tweet != null) {
             args.putParcelable("tweet", Parcels.wrap(tweet));
+        } else if (user != null) {
+            args.putParcelable("user", Parcels.wrap(user));
         }
         composeDialogFragment.setArguments(args);
         return composeDialogFragment;
@@ -124,6 +129,12 @@ public class ComposeDialogFragment extends DialogFragment {
             // Set notice TextView
             tvNotice.setVisibility(View.VISIBLE);
             tvNotice.setText("Replying to " + targetTweet.getUser().getName());
+        } else if (requestCode == TimelineActivity.REQUEST_COMPOSE_MESSAGE) {
+            user = Parcels.unwrap(getArguments().getParcelable("user"));
+            // Set notice TextView
+            tvNotice.setVisibility(View.VISIBLE);
+            tvNotice.setText("New Message to " + user.getName());
+            btnCompose.setText("Send");
         }
 
         // Set text change listener
@@ -138,16 +149,29 @@ public class ComposeDialogFragment extends DialogFragment {
                     dismiss();
                 }
 
-                Tweet newTweet = new Tweet();
-                newTweet.body = etContent.getText().toString();
-                newTweet.user = TimelineActivity.ACCOUNT;
-                if (tweet != null && requestCode == TimelineActivity.REQUEST_REPLY) {
-                    newTweet.inReplyToStatusId = String.valueOf(tweet.getTid());
-                }
+                if (requestCode == TimelineActivity.REQUEST_COMPOSE_MESSAGE) {
+                    Message newMessage = new Message();
+                    newMessage.text = etContent.getText().toString();
+                    newMessage.recipient = user;
+                    newMessage.sender = TimelineActivity.ACCOUNT;
 
-                // pass setting to activity via listener
-                ComposeDialogListener composeDialogListener = (ComposeDialogListener) getActivity();
-                composeDialogListener.onFinishComposeDialog(requestCode, newTweet);
+                    // pass setting to activity via listener
+                    ComposeDialogListener composeDialogListener
+                        = (ComposeDialogListener) getActivity();
+                    composeDialogListener.onFinishComposeDialog(requestCode, null, newMessage);
+                } else {
+                    Tweet newTweet = new Tweet();
+                    newTweet.body = etContent.getText().toString();
+                    newTweet.user = TimelineActivity.ACCOUNT;
+                    if (tweet != null && requestCode == TimelineActivity.REQUEST_REPLY) {
+                        newTweet.inReplyToStatusId = String.valueOf(tweet.getTid());
+                    }
+
+                    // pass setting to activity via listener
+                    ComposeDialogListener composeDialogListener
+                        = (ComposeDialogListener) getActivity();
+                    composeDialogListener.onFinishComposeDialog(requestCode, newTweet, null);
+                }
                 // close fragment
                 dismiss();
                 break;

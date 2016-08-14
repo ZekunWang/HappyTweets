@@ -19,7 +19,6 @@
             android:layout_width="@dimen/item_icon_width"
             android:layout_height="@dimen/item_icon_width"
             android:layout_marginRight="@dimen/item_img_profile_margin"
-            android:layout_below="@+id/ivNotice"
             android:id="@+id/ivProfile"
             tools:src="@color/primary"
             app:msgProfileImageUrl='@{user.getProfileImageUrl()}'/>

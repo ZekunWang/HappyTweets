@@ -50,12 +50,14 @@ The following **additional** features are implemented:
 * [x] Click to share link
 * [x] Show embedded image within the tweet
 * [x] Show embedded video in details activity
+* [x] Implement navigation drawer
+* [x] Implement CollapsingToolbarLayout
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](HappyTweets_v1.gif)
+![Video Walkthrough](HappyTweets_v2.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -69,6 +71,7 @@ Describe any challenges encountered while building the app:
 4. Utilize data binding
 5. Show videos within Tweets
 6. Interact with Twitter API
+7. Implement CollapsingToolbarLayout
 
 ## Open-source libraries used
 

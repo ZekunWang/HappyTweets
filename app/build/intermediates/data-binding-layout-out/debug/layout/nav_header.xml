@@ -1,0 +1,47 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/drawer_banner_height"
+    android:fitsSystemWindows="true"
+    android:paddingBottom="@dimen/design_navigation_separator_vertical_padding"
+    android:id="@+id/rvFollow">
+
+    <ImageView
+        android:id="@+id/ivBackgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:background="@color/primary_dark"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/tvScreenName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivBackgroundImage"
+        android:layout_marginLeft="@dimen/item_view_padding"
+        android:layout_marginBottom="@dimen/item_view_padding"
+        android:textColor="@color/icons"
+        android:textSize="@dimen/item_text_relative_time"
+        tools:background="#00ffff"
+        tools:text="456"/>
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvScreenName"
+        android:layout_marginTop="@dimen/item_view_padding"
+        android:layout_marginLeft="@dimen/item_view_padding"
+        android:textStyle="bold"
+        android:textColor="@color/icons"
+        android:textSize="@dimen/item_text_username"
+        tools:background="#ffff00"
+        tools:text="123"/>
+    <ImageView
+        android:layout_width="@dimen/profile_icon_width"
+        android:layout_height="@dimen/profile_icon_width"
+        android:layout_margin="@dimen/item_view_padding"
+        android:layout_above="@+id/tvUsername"
+        tools:src="@color/primary"
+        android:id="@+id/ivProfile"/>
+</RelativeLayout>

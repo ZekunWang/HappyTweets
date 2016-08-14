@@ -61,7 +61,7 @@ public class ProfileActivity extends AppCompatActivity
         binding = DataBindingUtil.setContentView(this, R.layout.activity_profile);
         subBinding = binding.includeDetails;
         // Set toolbar
-        setSupportActionBar(binding.toolbar);
+        //setSupportActionBar(binding.toolbar);
 
         // Get intent data
         position = getIntent().getIntExtra("position", -1);
@@ -82,7 +82,7 @@ public class ProfileActivity extends AppCompatActivity
 
         // Hide follow icon if is authenticating user
         if (account.getUid() == TimelineActivity.ACCOUNT.getUid()) {
-            subBinding.ivFollow.setVisibility(View.INVISIBLE);
+            binding.ivFollow.setVisibility(View.INVISIBLE);
         }
 
         // Create new Adapter
@@ -90,14 +90,14 @@ public class ProfileActivity extends AppCompatActivity
         // Set viewpager adapter for the pager
         subBinding.viewpager.setAdapter(tweetsPagerAdapter);
         // Attach the pager tab to viewpager
-        subBinding.tabs.setViewPager(subBinding.viewpager);
+        binding.tabs.setViewPager(subBinding.viewpager);
 
         // Bind activity with ButterKnife
         ButterKnife.bind(this);
     }
 
     @Override
-    public void onFinishComposeDialog(int requestCode, Tweet tweet) {
+    public void onFinishComposeDialog(int requestCode, Tweet tweet, Message message) {
         if (requestCode == TimelineActivity.REQUEST_COMPOSE || requestCode == TimelineActivity.REQUEST_REPLY) {
             HelperMethods.postTweet(HomeTimelineFragment.adapter, tweet);
         }
@@ -130,12 +130,12 @@ public class ProfileActivity extends AppCompatActivity
     }
 
     private void composeTweet() {
-        ComposeDialogFragment composeDialogFragment = ComposeDialogFragment.newInstance(TimelineActivity.REQUEST_COMPOSE, null);
-        composeDialogFragment.show(getFragmentManager(), "fragment_compose");
+        ComposeDialogFragment composeDialogFragment = ComposeDialogFragment.newInstance(TimelineActivity.REQUEST_COMPOSE, null, null);
+        composeDialogFragment.show(getSupportFragmentManager(), "fragment_compose");
     }
 
     // double tap to scroll to top
-    @OnClick({R.id.toolbar, R.id.fab, R.id.ivFollow, R.id.tvFollower,
+    @OnClick({R.id.fab, R.id.ivFollow, R.id.tvFollower,
         R.id.tvFollowerCount, R.id.tvFriend, R.id.tvFriendCount})
     public void onClick(View v) {
         switch (v.getId()) {
@@ -147,7 +147,7 @@ public class ProfileActivity extends AppCompatActivity
                 break;
             case R.id.ivFollow:
                 // Set listener to follow icon
-                HelperMethods.switchFollow(account, subBinding.ivFollow);
+                HelperMethods.switchFollow(account, binding.ivFollow);
                 break;
             case R.id.tvFollower:
             case R.id.tvFollowerCount:

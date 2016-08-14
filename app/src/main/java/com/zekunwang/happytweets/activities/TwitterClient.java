@@ -1,6 +1,7 @@
 package com.zekunwang.happytweets.activities;
 
 
+import com.zekunwang.happytweets.models.Message;
 import com.zekunwang.happytweets.models.Tweet;
 import com.codepath.oauth.OAuthBaseClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
@@ -320,6 +321,19 @@ public class TwitterClient extends OAuthBaseClient {
 
         // Execute the request
         getClient().get(apiUrl, params, handler);
+    }
+
+    // Pose new Message
+    public void composeNewMessages(Message message, AsyncHttpResponseHandler handler) {
+
+        String apiUrl = getApiUrl("direct_messages/new.json");
+        RequestParams params = new RequestParams();
+
+        params.put("user_id", "" + message.recipient.getUid());
+        params.put("text", message.getText());
+
+        // Execute the request
+        getClient().post(apiUrl, params, handler);
     }
 
 	/* 1. Define the endpoint URL with getApiUrl and pass a relative path to the endpoint

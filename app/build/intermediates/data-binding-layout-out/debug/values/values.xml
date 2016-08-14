@@ -16,6 +16,7 @@
     <color name="accent">#00BCD4</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
+    <color name="action_icon_color">#AAB8C2</color>
     <color name="background_floating_material_dark">@color/material_grey_800</color>
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
@@ -68,8 +69,8 @@
     <color name="material_grey_800">#ff424242</color>
     <color name="material_grey_850">#ff303030</color>
     <color name="material_grey_900">#ff212121</color>
-    <color name="primary">#03A9F4</color>
-    <color name="primary_dark">#0288D1</color>
+    <color name="primary">#1DA1F2</color>
+    <color name="primary_dark">#8898A7</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
     <color name="primary_light">#B3E5FC</color>
@@ -235,7 +236,7 @@
     <dimen name="design_navigation_icon_size">24dp</dimen>
     <dimen name="design_navigation_max_width">280dp</dimen>
     <dimen name="design_navigation_padding_bottom">8dp</dimen>
-    <dimen name="design_navigation_separator_vertical_padding">8dp</dimen>
+    <dimen name="design_navigation_separator_vertical_padding">0dp</dimen>
     <dimen name="design_snackbar_action_inline_max_width">128dp</dimen>
     <dimen name="design_snackbar_background_corner_radius">0dp</dimen>
     <dimen name="design_snackbar_elevation">6dp</dimen>
@@ -254,6 +255,7 @@
     <dimen name="details_icon_padding">8dp</dimen>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
+    <dimen name="drawer_banner_height">260dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
@@ -278,10 +280,10 @@
     <dimen name="notification_large_icon_height">64dp</dimen>
     <dimen name="notification_large_icon_width">64dp</dimen>
     <dimen name="notification_subtext_size">12dp</dimen>
-    <dimen name="profile_background_image_height">100dp</dimen>
+    <dimen name="profile_background_image_height">160dp</dimen>
     <dimen name="profile_follow_button_padding">5dp</dimen>
     <dimen name="profile_icon_width">70dp</dimen>
-    <dimen name="profile_image_margin_top">70dp</dimen>
+    <dimen name="profile_image_margin_top">130dp</dimen>
     <dimen name="profile_image_padding">3dp</dimen>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <item name="action_bar_activity_content" type="id"/>
@@ -344,12 +346,15 @@
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="compose_tweet">Tweet</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="drawer_open">Open navigation drawer</string>
     <string name="login_label">Connect to Twitter</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="title_activity_compose">Compose</string>
     <string name="title_activity_details">Tweet</string>
     <string name="title_activity_direct_message">Messages</string>
     <string name="title_activity_follow">Follow</string>
+    <string name="title_activity_new_message">NewMessageActivity</string>
     <string name="title_activity_profile">Profile</string>
     <string name="title_activity_search">Search</string>
     <string name="title_activity_timeline">Timeline</string>
@@ -372,13 +377,16 @@
     </style>
     <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Extends the base theme below -->
-        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimary">@color/icons</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
-        <item name="colorAccent">@color/rv_divider</item>
+        <item name="actionMenuTextColor">@color/primary</item>
+        <item name="android:textColorHint">@color/primary</item>
+        <item name="android:textColorPrimary">@color/primary</item>
+        <item name="android:textColorSecondary">@color/primary</item>
+        <item name="colorAccent">@color/primary</item>
         <!-- transparent status bar -->
-        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
 
         <!-- style for dialogs -->
         <item name="android:dialogTheme">@style/AppDialogTheme</item>
@@ -387,6 +395,14 @@
     </style>
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="AppThemeDetails" parent="AppTheme">
+        <!-- Extends the base theme below -->
+        <item name="android:textColorHint">@color/primary_dark</item>
+    </style>
+    <style name="AppThemeProfile" parent="AppTheme">
+        <!-- Extends the base theme below -->
+        <item name="colorPrimaryDark">@color/primary_text</item>
+    </style>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
         <item name="listLayout">@layout/abc_select_dialog_material</item>

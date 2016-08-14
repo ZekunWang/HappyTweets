@@ -64,7 +64,7 @@
             android:label="@string/title_activity_details"
             android:launchMode="singleTop"
             android:parentActivityName="com.zekunwang.happytweets.activities.TimelineActivity"
-            android:theme="@style/AppTheme"
+            android:theme="@style/AppThemeDetails"
             android:windowSoftInputMode="adjustResize" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -74,7 +74,7 @@
             android:name="com.zekunwang.happytweets.activities.ProfileActivity"
             android:label="@string/title_activity_profile"
             android:launchMode="singleTop"
-            android:theme="@style/AppTheme"
+            android:theme="@style/AppThemeProfile"
             android:windowSoftInputMode="adjustResize" >
         </activity>
         <activity

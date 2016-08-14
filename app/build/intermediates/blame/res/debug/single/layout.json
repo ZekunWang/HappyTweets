@@ -72,8 +72,16 @@
         "source": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\layout\\activity_timeline.xml"
     },
     {
+        "merged": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nav_header.xml",
+        "source": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\layout\\nav_header.xml"
+    },
+    {
         "merged": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
         "source": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\notification_template_lines.xml"
+    },
+    {
+        "merged": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_new_message.xml",
+        "source": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\layout\\item_new_message.xml"
     },
     {
         "merged": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_message.xml",

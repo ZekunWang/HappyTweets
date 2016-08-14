@@ -13,16 +13,16 @@ import java.lang.Override;
 public class FollowActivity_ViewBinding<T extends FollowActivity> implements Unbinder {
   protected T target;
 
-  private View view2131427465;
+  private View view2131361929;
 
-  private View view2131427467;
+  private View view2131361931;
 
   public FollowActivity_ViewBinding(final T target, Finder finder, Object source) {
     this.target = target;
 
     View view;
     view = finder.findRequiredView(source, R.id.toolbar, "method 'onClick'");
-    view2131427465 = view;
+    view2131361929 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -30,7 +30,7 @@ public class FollowActivity_ViewBinding<T extends FollowActivity> implements Unb
       }
     });
     view = finder.findRequiredView(source, R.id.fab, "method 'onClick'");
-    view2131427467 = view;
+    view2131361931 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -43,10 +43,10 @@ public class FollowActivity_ViewBinding<T extends FollowActivity> implements Unb
   public void unbind() {
     if (this.target == null) throw new IllegalStateException("Bindings already cleared.");
 
-    view2131427465.setOnClickListener(null);
-    view2131427465 = null;
-    view2131427467.setOnClickListener(null);
-    view2131427467 = null;
+    view2131361929.setOnClickListener(null);
+    view2131361929 = null;
+    view2131361931.setOnClickListener(null);
+    view2131361931 = null;
 
     this.target = null;
   }

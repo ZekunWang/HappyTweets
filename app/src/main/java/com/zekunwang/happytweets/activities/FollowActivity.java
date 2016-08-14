@@ -16,6 +16,7 @@ import com.zekunwang.happytweets.fragments.FollowListFragment;
 import com.zekunwang.happytweets.fragments.FriendsListFragment;
 import com.zekunwang.happytweets.fragments.HomeTimelineFragment;
 import com.zekunwang.happytweets.fragments.TweetsListFragment;
+import com.zekunwang.happytweets.models.Message;
 import com.zekunwang.happytweets.models.Tweet;
 import com.zekunwang.happytweets.models.User;
 import com.zekunwang.happytweets.others.HelperMethods;
@@ -63,7 +64,7 @@ public class FollowActivity extends AppCompatActivity
     }
 
     @Override
-    public void onFinishComposeDialog(int requestCode, Tweet tweet) {
+    public void onFinishComposeDialog(int requestCode, Tweet tweet, Message message) {
         if (requestCode == TimelineActivity.REQUEST_COMPOSE) {
             HelperMethods.postTweet(HomeTimelineFragment.adapter, tweet);
         }
@@ -109,8 +110,8 @@ public class FollowActivity extends AppCompatActivity
 
     private void composeTweet() {
         ComposeDialogFragment composeDialogFragment
-            = ComposeDialogFragment.newInstance(TimelineActivity.REQUEST_COMPOSE, null);
-        composeDialogFragment.show(getFragmentManager(), "fragment_compose");
+            = ComposeDialogFragment.newInstance(TimelineActivity.REQUEST_COMPOSE, null, null);
+        composeDialogFragment.show(getSupportFragmentManager(), "fragment_compose");
     }
 
 }

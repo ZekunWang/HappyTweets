@@ -14,22 +14,22 @@ import java.lang.Override;
 public class DetailsActivity_ViewBinding<T extends DetailsActivity> implements Unbinder {
   protected T target;
 
-  private View view2131427490;
+  private View view2131361965;
 
-  private View view2131427492;
+  private View view2131361967;
 
-  private View view2131427491;
+  private View view2131361966;
 
-  private View view2131427493;
+  private View view2131361968;
 
-  private View view2131427471;
+  private View view2131361950;
 
   public DetailsActivity_ViewBinding(final T target, Finder finder, Object source) {
     this.target = target;
 
     View view;
     view = finder.findRequiredView(source, R.id.ivReply, "method 'onClick'");
-    view2131427490 = view;
+    view2131361965 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -37,7 +37,7 @@ public class DetailsActivity_ViewBinding<T extends DetailsActivity> implements U
       }
     });
     view = finder.findRequiredView(source, R.id.ivFavorite, "method 'onClick'");
-    view2131427492 = view;
+    view2131361967 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -45,7 +45,7 @@ public class DetailsActivity_ViewBinding<T extends DetailsActivity> implements U
       }
     });
     view = finder.findRequiredView(source, R.id.ivRetweet, "method 'onClick'");
-    view2131427491 = view;
+    view2131361966 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -53,7 +53,7 @@ public class DetailsActivity_ViewBinding<T extends DetailsActivity> implements U
       }
     });
     view = finder.findRequiredView(source, R.id.ivShare, "method 'onClick'");
-    view2131427493 = view;
+    view2131361968 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -61,7 +61,7 @@ public class DetailsActivity_ViewBinding<T extends DetailsActivity> implements U
       }
     });
     view = finder.findRequiredView(source, R.id.etReply, "method 'onFocusChange' and method 'onTouch'");
-    view2131427471 = view;
+    view2131361950 = view;
     view.setOnFocusChangeListener(new View.OnFocusChangeListener() {
       @Override
       public void onFocusChange(View p0, boolean p1) {
@@ -80,17 +80,17 @@ public class DetailsActivity_ViewBinding<T extends DetailsActivity> implements U
   public void unbind() {
     if (this.target == null) throw new IllegalStateException("Bindings already cleared.");
 
-    view2131427490.setOnClickListener(null);
-    view2131427490 = null;
-    view2131427492.setOnClickListener(null);
-    view2131427492 = null;
-    view2131427491.setOnClickListener(null);
-    view2131427491 = null;
-    view2131427493.setOnClickListener(null);
-    view2131427493 = null;
-    view2131427471.setOnFocusChangeListener(null);
-    view2131427471.setOnTouchListener(null);
-    view2131427471 = null;
+    view2131361965.setOnClickListener(null);
+    view2131361965 = null;
+    view2131361967.setOnClickListener(null);
+    view2131361967 = null;
+    view2131361966.setOnClickListener(null);
+    view2131361966 = null;
+    view2131361968.setOnClickListener(null);
+    view2131361968 = null;
+    view2131361950.setOnFocusChangeListener(null);
+    view2131361950.setOnTouchListener(null);
+    view2131361950 = null;
 
     this.target = null;
   }

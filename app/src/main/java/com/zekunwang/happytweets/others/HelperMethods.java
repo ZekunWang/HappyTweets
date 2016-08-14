@@ -1,5 +1,7 @@
 package com.zekunwang.happytweets.others;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.zekunwang.happytweets.R;
 import com.zekunwang.happytweets.activities.ProfileActivity;
 import com.zekunwang.happytweets.activities.TimelineActivity;
@@ -42,6 +44,7 @@ import java.io.IOException;
 import java.util.regex.Pattern;
 
 import cz.msebera.android.httpclient.Header;
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
 
 public class HelperMethods {
@@ -315,9 +318,8 @@ public class HelperMethods {
                 // SUCCESS
                 @Override
                 public void onSuccess(int statusCode, Header[] headers, JSONObject jsonObject) {
-                    Log.i("DEBUG", "unset follow resule : " + jsonObject.toString());
                     User newFollow = User.fromJSONObject(jsonObject);
-                    if (newFollow != null && !newFollow.isFollowing()) {
+                    if (newFollow != null) {
                         Log.i("DEBUG", "is following now : " + newFollow.isFollowing());
                         // Reverse follow status
                         user.setFollowing(false);
@@ -343,9 +345,8 @@ public class HelperMethods {
                 // SUCCESS
                 @Override
                 public void onSuccess(int statusCode, Header[] headers, JSONObject jsonObject) {
-                    Log.i("DEBUG", "set follow resule : " + jsonObject.toString());
                     User newFollow = User.fromJSONObject(jsonObject);
-                    if (newFollow != null && newFollow.isFollowing()) {
+                    if (newFollow != null) {
                         Log.i("DEBUG", "is following now : " + newFollow.isFollowing());
                         // Reverse follow status
                         user.setFollowing(true);
@@ -425,5 +426,42 @@ public class HelperMethods {
                 }
             });
         }
+    }
+
+    public static void loadProfileImg(ImageView view, String url) {
+        Glide.with(view.getContext())
+            .load(url)
+            .placeholder(R.drawable.ic_launcher)
+            .bitmapTransform(new RoundedCornersTransformation(view.getContext(), 5, 0))
+            .diskCacheStrategy(DiskCacheStrategy.ALL)
+            .into(view);
+    }
+
+    public static void loadMsgProfileImg(ImageView view, String url) {
+        Glide.with(view.getContext())
+            .load(url)
+            .placeholder(R.drawable.ic_launcher)
+            .bitmapTransform(new RoundedCornersTransformation(view.getContext(), 25, 0))
+            .diskCacheStrategy(DiskCacheStrategy.ALL)
+            .into(view);
+    }
+
+    public static void loadBannerImg(ImageView view, String url) {
+        Glide.with(view.getContext())
+            .load(url)
+            .placeholder(R.drawable.ic_launcher)
+            .diskCacheStrategy(DiskCacheStrategy.ALL)
+            .into(view);
+    }
+
+    public static void setupAccount(User account, ImageView banner,
+            ImageView profile, TextView username, TextView screenname) {
+        if (account == null) {
+            return;
+        }
+        loadBannerImg(banner, account.getProfileBannerUrl());
+        loadMsgProfileImg(profile, account.getProfileImageUrl());
+        username.setText(account.getName());
+        screenname.setText("@" + account.getScreenName());
     }
 }

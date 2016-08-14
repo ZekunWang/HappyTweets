@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary">#03A9F4</color>
-    <color name="primary_dark">#0288D1</color>
+    <color name="primary">#1DA1F2</color>
+    <color name="primary_dark">#8898A7</color>
     <color name="primary_light">#B3E5FC</color>
     <color name="accent">#00BCD4</color>
     <color name="primary_text">#212121</color>
@@ -17,4 +17,6 @@
     <color name="item_background">#FFFFFF</color>
 
     <color name="ic_launcher_color">#1C9FF1</color>
+
+    <color name="action_icon_color">#AAB8C2</color>
 </resources>

@@ -21,6 +21,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -182,9 +183,9 @@ public class ContactsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             @Override
             public void onClick(View view) {
                 ComposeDialogFragment composeDialogFragment = ComposeDialogFragment.newInstance(
-                    TimelineActivity.REQUEST_REPLY, tweet);
+                    TimelineActivity.REQUEST_REPLY, tweet, null);
                 composeDialogFragment
-                    .show(((Activity) getContext()).getFragmentManager(), "fragment_compose");
+                    .show(((FragmentActivity) getContext()).getSupportFragmentManager(), "fragment_compose");
             }
         });
     }

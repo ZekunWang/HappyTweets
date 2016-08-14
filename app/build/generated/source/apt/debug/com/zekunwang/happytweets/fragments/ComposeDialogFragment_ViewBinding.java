@@ -17,9 +17,9 @@ import java.lang.Override;
 public class ComposeDialogFragment_ViewBinding<T extends ComposeDialogFragment> implements Unbinder {
   protected T target;
 
-  private View view2131427472;
+  private View view2131361951;
 
-  private View view2131427515;
+  private View view2131361982;
 
   public ComposeDialogFragment_ViewBinding(final T target, Finder finder, Object source) {
     this.target = target;
@@ -28,7 +28,7 @@ public class ComposeDialogFragment_ViewBinding<T extends ComposeDialogFragment> 
     target.etContent = finder.findRequiredViewAsType(source, R.id.etContent, "field 'etContent'", EditText.class);
     view = finder.findRequiredView(source, R.id.btnCompose, "field 'btnCompose' and method 'onClick'");
     target.btnCompose = finder.castView(view, R.id.btnCompose, "field 'btnCompose'", Button.class);
-    view2131427472 = view;
+    view2131361951 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -39,7 +39,7 @@ public class ComposeDialogFragment_ViewBinding<T extends ComposeDialogFragment> 
     target.ivProfile = finder.findRequiredViewAsType(source, R.id.ivProfile, "field 'ivProfile'", ImageView.class);
     view = finder.findRequiredView(source, R.id.ivNavigationUp, "field 'ivNavigationUp' and method 'onClick'");
     target.ivNavigationUp = finder.castView(view, R.id.ivNavigationUp, "field 'ivNavigationUp'", ImageView.class);
-    view2131427515 = view;
+    view2131361982 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -65,10 +65,10 @@ public class ComposeDialogFragment_ViewBinding<T extends ComposeDialogFragment> 
     target.tvScreenName = null;
     target.tvUsername = null;
 
-    view2131427472.setOnClickListener(null);
-    view2131427472 = null;
-    view2131427515.setOnClickListener(null);
-    view2131427515 = null;
+    view2131361951.setOnClickListener(null);
+    view2131361951 = null;
+    view2131361982.setOnClickListener(null);
+    view2131361982 = null;
 
     this.target = null;
   }

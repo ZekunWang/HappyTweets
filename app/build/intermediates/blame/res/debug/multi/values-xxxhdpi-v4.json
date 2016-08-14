@@ -7,274 +7,8 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endColumn": 40,
-                    "endOffset": 91
-                },
-                "from": {
-                    "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\color.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 197,
-                        "endColumn": 40,
-                        "endOffset": 233
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 96,
-                    "endColumn": 41,
-                    "endOffset": 133
-                },
-                "from": {
-                    "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\color.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 378,
-                        "endColumn": 41,
-                        "endOffset": 415
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 4,
-                    "startColumn": 4,
-                    "startOffset": 138,
-                    "endColumn": 51,
-                    "endOffset": 185
-                },
-                "from": {
-                    "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\color.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 690,
-                        "endColumn": 51,
-                        "endOffset": 737
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 5,
-                    "startColumn": 4,
-                    "startOffset": 190,
-                    "endColumn": 39,
-                    "endOffset": 225
-                },
-                "from": {
-                    "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\color.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 337,
-                        "endColumn": 39,
-                        "endOffset": 372
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 6,
-                    "startColumn": 4,
-                    "startOffset": 230,
-                    "endColumn": 49,
-                    "endOffset": 275
-                },
-                "from": {
-                    "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\color.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 637,
-                        "endColumn": 49,
-                        "endOffset": 682
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 7,
-                    "startColumn": 4,
-                    "startOffset": 280,
-                    "endColumn": 51,
-                    "endOffset": 327
-                },
-                "from": {
-                    "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\color.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 477,
-                        "endColumn": 51,
-                        "endOffset": 524
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 8,
-                    "startColumn": 4,
-                    "startOffset": 332,
                     "endColumn": 57,
-                    "endOffset": 385
-                },
-                "from": {
-                    "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\color.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 530,
-                        "endColumn": 57,
-                        "endOffset": 583
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 9,
-                    "startColumn": 4,
-                    "startOffset": 390,
-                    "endColumn": 52,
-                    "endOffset": 438
-                },
-                "from": {
-                    "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\color.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 423,
-                        "endColumn": 52,
-                        "endOffset": 471
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 10,
-                    "startColumn": 4,
-                    "startOffset": 443,
-                    "endColumn": 41,
-                    "endOffset": 480
-                },
-                "from": {
-                    "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\color.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 57,
-                        "endColumn": 41,
-                        "endOffset": 94
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 11,
-                    "startColumn": 4,
-                    "startOffset": 485,
-                    "endColumn": 46,
-                    "endOffset": 527
-                },
-                "from": {
-                    "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\color.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 100,
-                        "endColumn": 46,
-                        "endOffset": 142
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 12,
-                    "startColumn": 4,
-                    "startOffset": 532,
-                    "endColumn": 47,
-                    "endOffset": 575
-                },
-                "from": {
-                    "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\color.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 148,
-                        "endColumn": 47,
-                        "endOffset": 191
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 13,
-                    "startColumn": 4,
-                    "startOffset": 580,
-                    "endColumn": 46,
-                    "endOffset": 622
-                },
-                "from": {
-                    "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\color.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 239,
-                        "endColumn": 46,
-                        "endOffset": 281
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 14,
-                    "startColumn": 4,
-                    "startOffset": 627,
-                    "endColumn": 44,
-                    "endOffset": 667
-                },
-                "from": {
-                    "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\color.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 591,
-                        "endColumn": 44,
-                        "endOffset": 631
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 15,
-                    "startColumn": 4,
-                    "startOffset": 672,
-                    "endColumn": 48,
-                    "endOffset": 716
-                },
-                "from": {
-                    "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\color.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 287,
-                        "endColumn": 48,
-                        "endOffset": 331
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 16,
-                    "startColumn": 4,
-                    "startOffset": 721,
-                    "endColumn": 57,
-                    "endOffset": 774
+                    "endOffset": 108
                 },
                 "from": {
                     "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\dimens.xml",
@@ -289,11 +23,11 @@
             },
             {
                 "to": {
-                    "startLine": 17,
+                    "startLine": 3,
                     "startColumn": 4,
-                    "startOffset": 779,
+                    "startOffset": 113,
                     "endColumn": 55,
-                    "endOffset": 830
+                    "endOffset": 164
                 },
                 "from": {
                     "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\dimens.xml",
@@ -308,11 +42,11 @@
             },
             {
                 "to": {
-                    "startLine": 18,
+                    "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 835,
+                    "startOffset": 169,
                     "endColumn": 49,
-                    "endOffset": 880
+                    "endOffset": 214
                 },
                 "from": {
                     "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\dimens.xml",
@@ -327,11 +61,11 @@
             },
             {
                 "to": {
-                    "startLine": 19,
+                    "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 885,
+                    "startOffset": 219,
                     "endColumn": 44,
-                    "endOffset": 925
+                    "endOffset": 259
                 },
                 "from": {
                     "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\dimens.xml",
@@ -346,11 +80,11 @@
             },
             {
                 "to": {
-                    "startLine": 20,
+                    "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 930,
+                    "startOffset": 264,
                     "endColumn": 43,
-                    "endOffset": 969
+                    "endOffset": 303
                 },
                 "from": {
                     "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\dimens.xml",
@@ -365,11 +99,11 @@
             },
             {
                 "to": {
-                    "startLine": 21,
+                    "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 974,
+                    "startOffset": 308,
                     "endColumn": 50,
-                    "endOffset": 1020
+                    "endOffset": 354
                 },
                 "from": {
                     "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\dimens.xml",
@@ -384,11 +118,11 @@
             },
             {
                 "to": {
-                    "startLine": 22,
+                    "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 1025,
+                    "startOffset": 359,
                     "endColumn": 50,
-                    "endOffset": 1071
+                    "endOffset": 405
                 },
                 "from": {
                     "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\dimens.xml",
@@ -403,11 +137,11 @@
             },
             {
                 "to": {
-                    "startLine": 23,
+                    "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 1076,
+                    "startOffset": 410,
                     "endColumn": 41,
-                    "endOffset": 1113
+                    "endOffset": 447
                 },
                 "from": {
                     "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\dimens.xml",
@@ -422,11 +156,11 @@
             },
             {
                 "to": {
-                    "startLine": 24,
+                    "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 1118,
+                    "startOffset": 452,
                     "endColumn": 40,
-                    "endOffset": 1154
+                    "endOffset": 488
                 },
                 "from": {
                     "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\dimens.xml",
@@ -441,11 +175,11 @@
             },
             {
                 "to": {
-                    "startLine": 25,
+                    "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 1159,
+                    "startOffset": 493,
                     "endColumn": 50,
-                    "endOffset": 1205
+                    "endOffset": 539
                 },
                 "from": {
                     "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\dimens.xml",
@@ -460,11 +194,11 @@
             },
             {
                 "to": {
-                    "startLine": 26,
+                    "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 1210,
+                    "startOffset": 544,
                     "endColumn": 47,
-                    "endOffset": 1253
+                    "endOffset": 587
                 },
                 "from": {
                     "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\dimens.xml",
@@ -479,11 +213,11 @@
             },
             {
                 "to": {
-                    "startLine": 27,
+                    "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 1258,
+                    "startOffset": 592,
                     "endColumn": 52,
-                    "endOffset": 1306
+                    "endOffset": 640
                 },
                 "from": {
                     "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\dimens.xml",
@@ -498,11 +232,11 @@
             },
             {
                 "to": {
-                    "startLine": 28,
+                    "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 1311,
+                    "startOffset": 645,
                     "endColumn": 51,
-                    "endOffset": 1358
+                    "endOffset": 692
                 },
                 "from": {
                     "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\dimens.xml",
@@ -517,11 +251,11 @@
             },
             {
                 "to": {
-                    "startLine": 29,
+                    "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 1363,
+                    "startOffset": 697,
                     "endColumn": 46,
-                    "endOffset": 1405
+                    "endOffset": 739
                 },
                 "from": {
                     "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\dimens.xml",
@@ -536,11 +270,11 @@
             },
             {
                 "to": {
-                    "startLine": 30,
+                    "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 1410,
+                    "startOffset": 744,
                     "endColumn": 54,
-                    "endOffset": 1460
+                    "endOffset": 794
                 },
                 "from": {
                     "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\dimens.xml",
@@ -555,11 +289,11 @@
             },
             {
                 "to": {
-                    "startLine": 31,
+                    "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1465,
+                    "startOffset": 799,
                     "endColumn": 49,
-                    "endOffset": 1510
+                    "endOffset": 844
                 },
                 "from": {
                     "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\dimens.xml",
@@ -574,11 +308,11 @@
             },
             {
                 "to": {
-                    "startLine": 32,
+                    "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 1515,
+                    "startOffset": 849,
                     "endColumn": 48,
-                    "endOffset": 1559
+                    "endOffset": 893
                 },
                 "from": {
                     "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\dimens.xml",
@@ -593,11 +327,11 @@
             },
             {
                 "to": {
-                    "startLine": 33,
+                    "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1564,
+                    "startOffset": 898,
                     "endColumn": 54,
-                    "endOffset": 1614
+                    "endOffset": 948
                 },
                 "from": {
                     "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\dimens.xml",
@@ -612,11 +346,11 @@
             },
             {
                 "to": {
-                    "startLine": 34,
+                    "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1619,
+                    "startOffset": 953,
                     "endColumn": 49,
-                    "endOffset": 1664
+                    "endOffset": 998
                 },
                 "from": {
                     "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\dimens.xml",
@@ -631,11 +365,11 @@
             },
             {
                 "to": {
-                    "startLine": 35,
+                    "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 1669,
+                    "startOffset": 1003,
                     "endColumn": 48,
-                    "endOffset": 1713
+                    "endOffset": 1047
                 },
                 "from": {
                     "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\dimens.xml",
@@ -650,11 +384,11 @@
             },
             {
                 "to": {
-                    "startLine": 36,
+                    "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 1718,
+                    "startOffset": 1052,
                     "endColumn": 47,
-                    "endOffset": 1761
+                    "endOffset": 1095
                 },
                 "from": {
                     "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\ids.xml",
@@ -664,48 +398,6 @@
                         "startOffset": 129,
                         "endColumn": 48,
                         "endOffset": 173
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 37,
-                    "startColumn": 4,
-                    "startOffset": 1766,
-                    "endLine": 45,
-                    "endColumn": 12,
-                    "endOffset": 2193
-                },
-                "from": {
-                    "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\styles.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 546,
-                        "endLine": 21,
-                        "endColumn": 12,
-                        "endOffset": 973
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 46,
-                    "startColumn": 4,
-                    "startOffset": 2198,
-                    "endLine": 55,
-                    "endColumn": 12,
-                    "endOffset": 2721
-                },
-                "from": {
-                    "file": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\values-xxxhdpi\\styles.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 17,
-                        "endLine": 11,
-                        "endColumn": 12,
-                        "endOffset": 540
                     }
                 }
             }

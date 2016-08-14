@@ -20,31 +20,17 @@ import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 public class BindingAdapterUtils {
     @BindingAdapter({"bind:profileImageUrl"})
     public static void loadImage(ImageView view, String url) {
-        Glide.with(view.getContext())
-            .load(url)
-            .placeholder(R.drawable.ic_launcher)
-            .bitmapTransform(new RoundedCornersTransformation(view.getContext(), 5, 0))
-            .diskCacheStrategy(DiskCacheStrategy.ALL)
-            .into(view);
+        HelperMethods.loadProfileImg(view, url);
     }
 
     @BindingAdapter({"bind:msgProfileImageUrl"})
     public static void loadMsgImage(ImageView view, String url) {
-        Glide.with(view.getContext())
-            .load(url)
-            .placeholder(R.drawable.ic_launcher)
-            .bitmapTransform(new RoundedCornersTransformation(view.getContext(), 25, 0))
-            .diskCacheStrategy(DiskCacheStrategy.ALL)
-            .into(view);
+        HelperMethods.loadMsgProfileImg(view, url);
     }
 
     @BindingAdapter({"bind:profileBannerUrl"})
     public static void loadBannerImage(ImageView view, String url) {
-        Glide.with(view.getContext())
-            .load(url)
-            .placeholder(R.drawable.ic_launcher)
-            .diskCacheStrategy(DiskCacheStrategy.ALL)
-            .into(view);
+        HelperMethods.loadBannerImg(view, url);
     }
 
     @BindingAdapter({"bind:relativeTime"})

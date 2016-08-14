@@ -22,8 +22,9 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary"
-                app:titleTextColor="@color/icons"/>
+                android:background="@color/icons"
+                android:theme="@style/AppTheme"
+                app:titleTextColor="@color/primary"/>
 
         </android.support.design.widget.AppBarLayout>
 

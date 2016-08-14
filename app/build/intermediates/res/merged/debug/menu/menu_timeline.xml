@@ -7,15 +7,5 @@
           android:title="@string/action_search"
           android:icon="@drawable/ic_magnify"
           app:showAsAction="ifRoom|collapseActionView" />
-    <item
-        android:title="message"
-        android:id="@+id/action_message"
-        android:icon="@drawable/ic_message_text"
-        app:showAsAction="always" />
-    <item
-        android:title="profile"
-        android:id="@+id/action_profile"
-        android:icon="@drawable/ic_account"
-        app:showAsAction="always" />
 
 </menu>

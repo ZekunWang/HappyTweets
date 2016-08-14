@@ -6,6 +6,7 @@ import com.zekunwang.happytweets.activities.TimelineActivity;
 import com.zekunwang.happytweets.activities.TwitterApplication;
 import com.zekunwang.happytweets.activities.TwitterClient;
 import com.zekunwang.happytweets.adapters.MediaContactsAdapter;
+import com.zekunwang.happytweets.models.Message;
 import com.zekunwang.happytweets.models.Tweet;
 import com.zekunwang.happytweets.models.User;
 import com.zekunwang.happytweets.others.HelperMethods;
@@ -72,7 +73,7 @@ public class MediaTimelineFragment extends TweetsListFragment
     }
 
     @Override
-    public void onFinishComposeDialog(int requestCode, Tweet tweet) {
+    public void onFinishComposeDialog(int requestCode, Tweet tweet, Message message) {
         if (requestCode == TimelineActivity.REQUEST_REPLY) {
             HelperMethods.postTweet(HomeTimelineFragment.adapter, tweet);
         }

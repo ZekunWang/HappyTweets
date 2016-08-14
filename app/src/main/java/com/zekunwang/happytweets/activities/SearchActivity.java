@@ -29,6 +29,7 @@ import com.zekunwang.happytweets.fragments.HomeTimelineFragment;
 import com.zekunwang.happytweets.fragments.MentionsTimelineFragment;
 import com.zekunwang.happytweets.fragments.SearchTweetsFragment;
 import com.zekunwang.happytweets.fragments.TweetsListFragment;
+import com.zekunwang.happytweets.models.Message;
 import com.zekunwang.happytweets.models.Tweet;
 import com.zekunwang.happytweets.models.User;
 import com.zekunwang.happytweets.others.HelperMethods;
@@ -82,7 +83,7 @@ public class SearchActivity extends AppCompatActivity
     }
 
     @Override
-    public void onFinishComposeDialog(int requestCode, Tweet tweet) {
+    public void onFinishComposeDialog(int requestCode, Tweet tweet, Message message) {
         if (requestCode == TimelineActivity.REQUEST_COMPOSE || requestCode == TimelineActivity.REQUEST_REPLY) {
             HelperMethods.postTweet(HomeTimelineFragment.adapter, tweet);
         }
@@ -177,8 +178,8 @@ public class SearchActivity extends AppCompatActivity
 
     private void composeTweet() {
         ComposeDialogFragment composeDialogFragment = ComposeDialogFragment
-            .newInstance(TimelineActivity.REQUEST_COMPOSE, null);
-        composeDialogFragment.show(getFragmentManager(), "fragment_compose");
+            .newInstance(TimelineActivity.REQUEST_COMPOSE, null, null);
+        composeDialogFragment.show(getSupportFragmentManager(), "fragment_compose");
     }
 
     // double tap to scroll to top

@@ -13,6 +13,10 @@ class DataBinderMapper {
                     return com.zekunwang.happytweets.databinding.ItemMediumBinding.bind(view, bindingComponent);
                 case com.zekunwang.happytweets.R.layout.item_tweet:
                     return com.zekunwang.happytweets.databinding.ItemTweetBinding.bind(view, bindingComponent);
+                case com.zekunwang.happytweets.R.layout.item_new_message:
+                    return com.zekunwang.happytweets.databinding.ItemNewMessageBinding.bind(view, bindingComponent);
+                case com.zekunwang.happytweets.R.layout.nav_header:
+                    return com.zekunwang.happytweets.databinding.NavHeaderBinding.bind(view, bindingComponent);
                 case com.zekunwang.happytweets.R.layout.activity_details:
                     return com.zekunwang.happytweets.databinding.ActivityDetailsBinding.bind(view, bindingComponent);
                 case com.zekunwang.happytweets.R.layout.content_details:
@@ -52,6 +56,18 @@ class DataBinderMapper {
             case -657259653: {
                 if(tag.equals("layout/item_tweet_0")) {
                     return com.zekunwang.happytweets.R.layout.item_tweet;
+                }
+                break;
+            }
+            case 1813869810: {
+                if(tag.equals("layout/item_new_message_0")) {
+                    return com.zekunwang.happytweets.R.layout.item_new_message;
+                }
+                break;
+            }
+            case 2001258847: {
+                if(tag.equals("layout/nav_header_0")) {
+                    return com.zekunwang.happytweets.R.layout.nav_header;
                 }
                 break;
             }

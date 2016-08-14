@@ -19,6 +19,7 @@
         app:pstsDividerColor="@color/icons"
         app:pstsIndicatorColor="@color/primary"
         app:pstsUnderlineColor="@color/rv_divider"
+        app:pstsUnderlineHeight="1dp"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize" />
 

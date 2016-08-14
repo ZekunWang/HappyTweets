@@ -8,6 +8,7 @@ import com.zekunwang.happytweets.databinding.ContentDetailsBinding;
 import com.zekunwang.happytweets.fragments.ComposeDialogFragment;
 import com.zekunwang.happytweets.fragments.HomeTimelineFragment;
 import com.zekunwang.happytweets.models.Medium;
+import com.zekunwang.happytweets.models.Message;
 import com.zekunwang.happytweets.models.Tweet;
 import com.zekunwang.happytweets.models.User;
 import com.zekunwang.happytweets.others.HelperMethods;
@@ -193,12 +194,12 @@ public class DetailsActivity extends AppCompatActivity
     }
 
     private void jumpToReply() {
-        ComposeDialogFragment composeDialogFragment = ComposeDialogFragment.newInstance(TimelineActivity.REQUEST_REPLY, tweet);
-        composeDialogFragment.show(getFragmentManager(), "fragment_compose");
+        ComposeDialogFragment composeDialogFragment = ComposeDialogFragment.newInstance(TimelineActivity.REQUEST_REPLY, tweet, null);
+        composeDialogFragment.show(getSupportFragmentManager(), "fragment_compose");
     }
 
     @Override
-    public void onFinishComposeDialog(int requestCode, Tweet t) {
+    public void onFinishComposeDialog(int requestCode, Tweet t, Message message) {
         if (requestCode == TimelineActivity.REQUEST_REPLY) {
             HelperMethods.postTweet(HomeTimelineFragment.adapter, t);
         }
