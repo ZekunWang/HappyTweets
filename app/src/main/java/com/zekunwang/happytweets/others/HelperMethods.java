@@ -464,4 +464,8 @@ public class HelperMethods {
         username.setText(account.getName());
         screenname.setText("@" + account.getScreenName());
     }
+
+    public static void showSoftKeyboard() {
+
+    }
 }

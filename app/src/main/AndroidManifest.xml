@@ -51,7 +51,7 @@
             android:name=".activities.TimelineActivity"
             android:label="@string/title_activity_timeline"
             android:launchMode="singleTop"
-            android:theme="@style/AppTheme"
+            android:theme="@style/AppThemeDrawer"
             android:windowSoftInputMode="adjustResize" >
         </activity>
         <activity

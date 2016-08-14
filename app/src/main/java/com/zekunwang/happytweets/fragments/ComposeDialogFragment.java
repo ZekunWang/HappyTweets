@@ -146,6 +146,8 @@ public class ComposeDialogFragment extends DialogFragment {
         switch(v.getId()) {
             case R.id.btnCompose:
                 if (etContent.getText().length() <= 0) {    // No input
+                    // Hide keyboard
+                    getDialog().getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
                     dismiss();
                 }
 
@@ -172,6 +174,8 @@ public class ComposeDialogFragment extends DialogFragment {
                         = (ComposeDialogListener) getActivity();
                     composeDialogListener.onFinishComposeDialog(requestCode, newTweet, null);
                 }
+                // Hide keyboard
+                getDialog().getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
                 // close fragment
                 dismiss();
                 break;

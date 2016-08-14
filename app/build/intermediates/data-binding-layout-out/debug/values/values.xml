@@ -399,6 +399,10 @@
         <!-- Extends the base theme below -->
         <item name="android:textColorHint">@color/primary_dark</item>
     </style>
+    <style name="AppThemeDrawer" parent="AppTheme">
+        <!-- Extends the base theme below -->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
     <style name="AppThemeProfile" parent="AppTheme">
         <!-- Extends the base theme below -->
         <item name="colorPrimaryDark">@color/primary_text</item>
