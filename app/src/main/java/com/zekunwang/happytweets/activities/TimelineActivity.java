@@ -5,7 +5,6 @@ import com.loopj.android.http.JsonHttpResponseHandler;
 import com.zekunwang.happytweets.R;
 import com.zekunwang.happytweets.adapters.ContactsAdapter;
 import com.zekunwang.happytweets.adapters.SmartFragmentStatePagerAdapter;
-import com.zekunwang.happytweets.databinding.NavHeaderBinding;
 import com.zekunwang.happytweets.fragments.ComposeDialogFragment;
 import com.zekunwang.happytweets.fragments.HomeTimelineFragment;
 import com.zekunwang.happytweets.fragments.MentionsTimelineFragment;

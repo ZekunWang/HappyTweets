@@ -17,12 +17,14 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.parceler.Parcels;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -45,7 +47,7 @@ public class TweetsListFragment extends Fragment {
     protected List<Tweet> tweets;
     protected RecyclerView.Adapter<RecyclerView.ViewHolder> rvAdapter;
     private LinearLayoutManager mLinearLayoutManager;
-    @BindView(R.id.rvTweets) RecyclerView rvTweets;
+    @BindView(R.id.rvTweets) protected RecyclerView rvTweets;
     @BindView(R.id.swipeContainer) protected SwipeRefreshLayout swipeContainer;
     protected MenuItem miActionProgressItem;
     private Unbinder unbinder;
@@ -91,6 +93,17 @@ public class TweetsListFragment extends Fragment {
             }
         );
 
+
+        // Add item long click feature to RecyclerView
+        ItemClickSupport.addTo(rvTweets).setOnItemLongClickListener(
+            new ItemClickSupport.OnItemLongClickListener() {
+                @Override
+                public boolean onItemLongClicked(RecyclerView recyclerView, final int position, View v) {
+                    return itemLongClicked(position);
+                }
+            }
+        );
+
         // Setup refresh listener which triggers new data loading
         swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
@@ -121,6 +134,10 @@ public class TweetsListFragment extends Fragment {
     }
 
     public void itemClicked(int position) {
+    }
+
+    public boolean itemLongClicked(int position) {
+        return false;
     }
 
     public void endlessLoad(int page, int totalItemsCount) {

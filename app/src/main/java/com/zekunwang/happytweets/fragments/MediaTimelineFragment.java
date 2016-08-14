@@ -81,7 +81,7 @@ public class MediaTimelineFragment extends TweetsListFragment
 
     @Override
     public void endlessLoad(int page, int totalItemsCount) {
-        populateTimeline(null, adapter.get(totalItemsCount - 1).getTweet().getTid() - 1);
+        populateTimeline(null, Long.parseLong(adapter.get(totalItemsCount - 1).getTweet().getTid()) - 1);
     }
 
     public MediaContactsAdapter getAdapter() {

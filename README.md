@@ -53,12 +53,13 @@ The following **additional** features are implemented:
 * [x] Implement navigation drawer
 * [x] Implement CollapsingToolbarLayout
 * [x] Click any profile image at any fragment or activity to view user profile
+* [x] Long click to delete authenticating user's tweet
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](HappyTweets_v2.gif)
+![Video Walkthrough](HappyTweets_v3.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 

@@ -21,7 +21,7 @@ public class Tweet extends Model {
     @Column(name = "body")
     public String body;
     @Column(name = "tid", unique = true, onUniqueConflict = Column.ConflictAction.REPLACE)
-    public long tid;
+    public String tid;
     @Column(name = "retweet_count")
     public int retweetCount;
     @Column(name = "favorite_count")
@@ -50,7 +50,7 @@ public class Tweet extends Model {
         return body;
     }
 
-    public long getTid() {
+    public String getTid() {
         return tid;
     }
 
@@ -114,11 +114,10 @@ public class Tweet extends Model {
 
     // Finds existing retweeted status based on tid or creates new retweeted status and returns
     public static Tweet findOrCreateFromJson(JSONObject json) {
-        long tId = 0; // get just the remote id
         Tweet tweet = null;
 
         try {
-            tId = json.getLong("id");
+            String tId = json.getString("id_str");
             // Search for duplicate
             tweet = new Select().from(Tweet.class).where("tid = ?", tId).executeSingle();
             if (tweet == null) {
@@ -139,7 +138,7 @@ public class Tweet extends Model {
 
         try {
             tweet.body = jsonObject.getString("text");
-            tweet.tid = jsonObject.getLong("id");
+            tweet.tid = jsonObject.getString("id_str");
             tweet.createdAt = jsonObject.getString("created_at");
             tweet.retweetCount = jsonObject.getInt("retweet_count");
             tweet.favoriteCount = jsonObject.getInt("favorite_count");

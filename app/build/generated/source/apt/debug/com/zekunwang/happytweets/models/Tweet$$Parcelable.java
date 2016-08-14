@@ -13,7 +13,7 @@ import org.parceler.Generated;
 import org.parceler.ParcelWrapper;
 import org.parceler.ParcelerRuntimeException;
 
-@Generated(value = "org.parceler.ParcelAnnotationProcessor", date = "2016-08-14T11:43-0500")
+@Generated(value = "org.parceler.ParcelAnnotationProcessor", date = "2016-08-14T17:21-0500")
 @SuppressWarnings({
     "unchecked",
     "deprecation"
@@ -65,7 +65,7 @@ public class Tweet$$Parcelable
                     }
                 }
                 com.zekunwang.happytweets.models.User$$Parcelable.write(tweet$$1 .user, parcel$$1, flags$$0, identitySet$$0);
-                parcel$$1 .writeLong(tweet$$1 .tid);
+                parcel$$1 .writeString(tweet$$1 .tid);
                 parcel$$1 .writeInt(tweet$$1 .retweetCount);
                 parcel$$1 .writeInt(tweet$$1 .favoriteCount);
                 parcel$$1 .writeInt((tweet$$1 .favorited? 1 : 0));
@@ -132,7 +132,7 @@ public class Tweet$$Parcelable
             tweet$$5 .userMentions = string$$1;
             User user$$0 = com.zekunwang.happytweets.models.User$$Parcelable.read(parcel$$3, identityMap$$0);
             tweet$$5 .user = user$$0;
-            tweet$$5 .tid = parcel$$3 .readLong();
+            tweet$$5 .tid = parcel$$3 .readString();
             tweet$$5 .retweetCount = parcel$$3 .readInt();
             tweet$$5 .favoriteCount = parcel$$3 .readInt();
             tweet$$5 .favorited = (parcel$$3 .readInt() == 1);

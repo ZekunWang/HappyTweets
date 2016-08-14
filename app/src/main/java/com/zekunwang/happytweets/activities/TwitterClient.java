@@ -336,6 +336,17 @@ public class TwitterClient extends OAuthBaseClient {
         getClient().post(apiUrl, params, handler);
     }
 
+    // Delete a Tweet
+    public void deleteTweet(Tweet tweet, AsyncHttpResponseHandler handler) {
+        if (tweet == null) {
+            return;
+        }
+        String apiUrl = getApiUrl("statuses/destroy/" + tweet.getTid() + ".json");
+
+        // Execute the request
+        getClient().post(apiUrl, handler);
+    }
+
 	/* 1. Define the endpoint URL with getApiUrl and pass a relative path to the endpoint
 	 * 	  i.e getApiUrl("statuses/home_timeline.json");
 	 * 2. Define the parameters to pass to the request (query or body)

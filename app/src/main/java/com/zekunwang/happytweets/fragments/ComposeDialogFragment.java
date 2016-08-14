@@ -27,6 +27,7 @@ import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import butterknife.OnFocusChange;
 import butterknife.Unbinder;
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
@@ -137,6 +138,9 @@ public class ComposeDialogFragment extends DialogFragment {
             btnCompose.setText("Send");
         }
 
+        // Focus on content
+        etContent.requestFocus();
+
         // Set text change listener
         HelperMethods.setTextChangedListener(activity, etContent, tvAvailableChars, btnCompose);
     }
@@ -146,8 +150,6 @@ public class ComposeDialogFragment extends DialogFragment {
         switch(v.getId()) {
             case R.id.btnCompose:
                 if (etContent.getText().length() <= 0) {    // No input
-                    // Hide keyboard
-                    getDialog().getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
                     dismiss();
                 }
 
@@ -174,8 +176,6 @@ public class ComposeDialogFragment extends DialogFragment {
                         = (ComposeDialogListener) getActivity();
                     composeDialogListener.onFinishComposeDialog(requestCode, newTweet, null);
                 }
-                // Hide keyboard
-                getDialog().getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
                 // close fragment
                 dismiss();
                 break;
@@ -184,6 +184,18 @@ public class ComposeDialogFragment extends DialogFragment {
                 break;
         }
     }
+
+    @OnFocusChange(R.id.etContent)
+    public void onFocusChange(View view, boolean b) {
+        if (!b) {   // not focus now
+            // Hide keyboard
+            getDialog().getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+        } else {
+            // Show keyboard
+            getDialog().getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
+        }
+    }
+
 
     @Override
     public void onDestroyView() {

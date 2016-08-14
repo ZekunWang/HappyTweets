@@ -82,7 +82,7 @@ public class MentionsTimelineFragment extends TweetsListFragment
 
     @Override
     public void endlessLoad(int page, int totalItemsCount) {
-        populateTimeline(null, tweets.get(totalItemsCount - 1).getTid() - 1);
+        populateTimeline(null, Long.parseLong(tweets.get(totalItemsCount - 1).getTid()) - 1);
     }
 
     public ContactsAdapter getAdapter() {

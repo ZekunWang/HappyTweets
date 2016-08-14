@@ -141,9 +141,9 @@ public class DetailsActivity extends AppCompatActivity
 
     @OnFocusChange(R.id.etReply)
     public void onFocusChange(View view, boolean b) {
-        // Hide keyboard
-        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
         if (!b) {   // not focus now
+            // Hide keyboard
+            getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
             if (etReply.length() == 0) {
                 btnCompose.setVisibility(View.GONE);
                 tvAvailableChars.setVisibility(View.GONE);
@@ -197,8 +197,6 @@ public class DetailsActivity extends AppCompatActivity
     }
 
     private void jumpToReply() {
-        // Hide keyboard
-        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
         ComposeDialogFragment composeDialogFragment = ComposeDialogFragment.newInstance(TimelineActivity.REQUEST_REPLY, tweet, null);
         composeDialogFragment.show(getSupportFragmentManager(), "fragment_compose");
     }
@@ -281,8 +279,6 @@ public class DetailsActivity extends AppCompatActivity
         HelperMethods.postTweet(null, newTweet);
         // Clear EditText
         clearReply();
-        // Hide keyboard
-        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
     }
 
     @Override

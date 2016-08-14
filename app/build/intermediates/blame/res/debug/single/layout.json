@@ -24,12 +24,12 @@
         "source": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.1.1\\res\\layout\\design_menu_item_action_area.xml"
     },
     {
-        "merged": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
-        "source": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.1.1\\res\\layout\\design_navigation_item_header.xml"
-    },
-    {
         "merged": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
         "source": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.1.1\\res\\layout\\design_navigation_item_header.xml"
     },
     {
         "merged": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
@@ -40,12 +40,12 @@
         "source": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
-        "source": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_action_mode_close_item_material.xml"
-    },
-    {
         "merged": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_search.xml",
         "source": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\src\\main\\res\\layout\\content_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "C:\\Users\\zwang_000\\AndroidStudioProjects\\HappyTweets\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",

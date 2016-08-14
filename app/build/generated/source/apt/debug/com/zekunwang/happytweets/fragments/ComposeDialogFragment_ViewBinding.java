@@ -17,6 +17,8 @@ import java.lang.Override;
 public class ComposeDialogFragment_ViewBinding<T extends ComposeDialogFragment> implements Unbinder {
   protected T target;
 
+  private View view2131361983;
+
   private View view2131361951;
 
   private View view2131361982;
@@ -25,7 +27,15 @@ public class ComposeDialogFragment_ViewBinding<T extends ComposeDialogFragment> 
     this.target = target;
 
     View view;
-    target.etContent = finder.findRequiredViewAsType(source, R.id.etContent, "field 'etContent'", EditText.class);
+    view = finder.findRequiredView(source, R.id.etContent, "field 'etContent' and method 'onFocusChange'");
+    target.etContent = finder.castView(view, R.id.etContent, "field 'etContent'", EditText.class);
+    view2131361983 = view;
+    view.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+      @Override
+      public void onFocusChange(View p0, boolean p1) {
+        target.onFocusChange(p0, p1);
+      }
+    });
     view = finder.findRequiredView(source, R.id.btnCompose, "field 'btnCompose' and method 'onClick'");
     target.btnCompose = finder.castView(view, R.id.btnCompose, "field 'btnCompose'", Button.class);
     view2131361951 = view;
@@ -65,6 +75,8 @@ public class ComposeDialogFragment_ViewBinding<T extends ComposeDialogFragment> 
     target.tvScreenName = null;
     target.tvUsername = null;
 
+    view2131361983.setOnFocusChangeListener(null);
+    view2131361983 = null;
     view2131361951.setOnClickListener(null);
     view2131361951 = null;
     view2131361982.setOnClickListener(null);
