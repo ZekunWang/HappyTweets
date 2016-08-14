@@ -52,6 +52,7 @@ The following **additional** features are implemented:
 * [x] Show embedded video in details activity
 * [x] Implement navigation drawer
 * [x] Implement CollapsingToolbarLayout
+* [x] Click any profile image at any fragment or activity to view user profile
 
 ## Video Walkthrough
 
@@ -72,6 +73,7 @@ Describe any challenges encountered while building the app:
 5. Show videos within Tweets
 6. Interact with Twitter API
 7. Implement CollapsingToolbarLayout
+8. Logic design and communication control between activities and fragments
 
 ## Open-source libraries used
 
